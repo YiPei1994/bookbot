@@ -5,7 +5,6 @@ def main():
     chars_dict = get_chars_dict(text)
 
     listed = []
-
     
     for chars in chars_dict:
         if chars.isalpha():
@@ -24,6 +23,7 @@ def main():
         print(f'The "{dict["name"]}" character was found {dict["num"]} times')     
 
     print('--- End report ---')
+    
 def get_num_words(text):
     words = text.split()
     return len(words)
